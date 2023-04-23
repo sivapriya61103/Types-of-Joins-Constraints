@@ -1,0 +1,36 @@
+DESCRIPTION:
+
+The question is asking for a SQL query to retrieve all unique values of the "category" column from the "products" table.
+The "products" table has several columns, including "product_id", "product_name", "category", and "price". 
+Each row in the table represents a product, with its unique product ID, name, category, and price.
+To retrieve all unique values of the "category" column, we can use the SQL query:
+                   SELECT DISTINCT category FROM products;
+
+This query selects the "category" column from the "products" table, and uses the DISTINCT keyword to remove any duplicate values. 
+The query returns only the unique values of the "category" column.
+In summary, the SQL query retrieves a distinct list of all the unique values of the "category" column from the "products" table.
+
+SQL QUERY:
+
+create table products (product_id int,product_name varchar(50),category varchar(20),price float);
+
+insert into products values(1,'T-Shirt','Clothing',10.99);
+insert into products values(2,'Socks','Clothing',4.99);
+insert into products values(3,'Hat','Accessories',12.99);
+insert into products values(4,'Shoes','Footwear',59.99);
+insert into products values(5,'Backpack','Accessories',29.99);
+insert into products values(6,'Pants','Clothing',24.99);
+
+select DISTINCT category from products;
+
+OUTPUT:
+
+category
+
+Clothing
+
+Accessories
+
+Footwear
+
+
